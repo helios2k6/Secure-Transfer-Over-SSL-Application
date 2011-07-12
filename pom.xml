@@ -19,6 +19,11 @@
 			<artifactId>PureMVC_Java_MultiCore</artifactId>
 			<version>1.0.7</version>
 		</dependency>
+		<dependency>
+			<groupId>jdom</groupId>
+			<artifactId>jdom</artifactId>
+			<version>1.1</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -41,6 +46,7 @@
 			</resource>
 		</resources>
 		<plugins>
+			
 			<plugin>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<version>2.7</version>

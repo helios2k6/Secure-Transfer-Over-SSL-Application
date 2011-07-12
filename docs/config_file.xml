@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+	<user>
+		<common-name>Andrew</common-name>
+		<keystore>
+			<location>keystore.jks</location>
+			<password>password</password>
+		</keystore>
+		<truststore>
+			<location>truststore.jks</location>
+			<password>password</password>
+		</truststore>
+	</user>
+</config>
