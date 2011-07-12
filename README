@@ -1,0 +1,16 @@
+Secure Transfer Over SSL Application (STA)
+
+1. Introduction
+The Secure Transfer Over SSL Application is a direct friend-to-friend application that allows you to connect to a specific peer over SSL and share files. This is not a swarm-based or public file-sharing application. 
+
+This application is meant to securely and reliably transfer files from one peer to another. 
+
+STA supports bandwidth throttling and resuming broken downloads. 
+
+STA requires that both peers have public certificates that have been signed by a commonly trusted CA before any connection is made. 
+
+STA uses UPnP Port-mapping to enable port forwarding when behind network routers.
+
+STA is set up to act as both the server and the client, and thus requires two SSL connections before any action can be taken. Peer A must connect to Peer B's server socket and Peer B must connect to Peer A's server socket before any communication can take place.
+
+Only one file can be downloaded at a time, but simultaneous uploading and downloading is possible.
