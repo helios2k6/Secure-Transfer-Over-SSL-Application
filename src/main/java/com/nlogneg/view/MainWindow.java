@@ -1,4 +1,4 @@
-package com.nlogn.view;
+package com.nlogneg.view;
 
 import java.awt.Component;
 

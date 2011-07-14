@@ -32,7 +32,7 @@ import javax.net.ssl.SSLSocket;
 import org.apache.log4j.Logger;
 import org.puremvc.java.multicore.patterns.proxy.Proxy;
 
-import com.nlogn.SecureFacade;
+import com.nlogneg.SecureFacade;
 import com.nlogneg.model.objects.Message;
 
 /**

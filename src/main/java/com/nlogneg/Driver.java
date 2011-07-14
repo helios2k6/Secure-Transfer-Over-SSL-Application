@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-package com.nlogn;
+package com.nlogneg;
 
 import java.io.File;
 

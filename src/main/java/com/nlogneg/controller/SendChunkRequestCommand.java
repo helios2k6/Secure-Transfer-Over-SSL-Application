@@ -26,7 +26,7 @@ import org.apache.log4j.Logger;
 import org.puremvc.java.multicore.interfaces.INotification;
 import org.puremvc.java.multicore.patterns.command.SimpleCommand;
 
-import com.nlogn.SecureFacade;
+import com.nlogneg.SecureFacade;
 import com.nlogneg.model.OutboundProxy;
 import com.nlogneg.model.objects.ChunkRequest;
 import com.nlogneg.model.objects.Message;

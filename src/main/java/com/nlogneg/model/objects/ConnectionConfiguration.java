@@ -2,7 +2,7 @@ package com.nlogneg.model.objects;
 
 import java.io.File;
 
-public class ProgramConfiguration {
+public class ConnectionConfiguration {
 	private String commonName;
 	
 	private File keystoreFile;
@@ -11,7 +11,7 @@ public class ProgramConfiguration {
 	private File trustStoreFile;
 	private String trustStorePassword;
 	
-	public ProgramConfiguration(String commonName, File keystoreFile,
+	public ConnectionConfiguration(String commonName, File keystoreFile,
 			String keystorePassword, File trustStoreFile,
 			String trustStorePassword) {
 		super();

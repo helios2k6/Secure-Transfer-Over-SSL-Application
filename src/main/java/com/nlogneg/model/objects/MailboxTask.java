@@ -28,7 +28,7 @@ import java.util.concurrent.PriorityBlockingQueue;
 
 import org.apache.log4j.Logger;
 
-import com.nlogn.SecureFacade;
+import com.nlogneg.SecureFacade;
 
 public class MailboxTask implements Runnable{
 

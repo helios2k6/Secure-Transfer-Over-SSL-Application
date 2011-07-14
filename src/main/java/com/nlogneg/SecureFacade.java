@@ -18,7 +18,7 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package com.nlogn;
+package com.nlogneg;
 
 import java.util.UUID;
 
@@ -53,6 +53,8 @@ public class SecureFacade extends Facade{
 	public static final String PROGRAM_CONFIGURATION_PARSED_NOTIFICATION = "PROGRAM_CONFIGURATION_PARSED_NOTIFICATION";
 	
 	public static final String ENVIRONMENTAL_VARIABLES_SETUP_NOTIFICATION = "ENVIRONMENTAL_VARIABLES_SETUP_NOTIFICATION";
+	
+	public static final String LOCAL_SHARE_FOLDER_FILE_TABLE_UPDATED_NOTIFICATION = "FILE_TABLE_UPDATED_NOTIFICATION";
 	
 	protected SecureFacade(String key) {
 		super(key);

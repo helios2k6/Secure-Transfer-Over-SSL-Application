@@ -11,9 +11,10 @@ import org.jdom.input.SAXBuilder;
 import org.puremvc.java.multicore.interfaces.INotification;
 import org.puremvc.java.multicore.patterns.command.SimpleCommand;
 
-import com.nlogn.SecureFacade;
-import com.nlogneg.model.objects.ProgramConfiguration;
+import com.nlogneg.SecureFacade;
+import com.nlogneg.model.objects.ConnectionConfiguration;
 
+@Deprecated
 public class ParseArgumentsCommand extends SimpleCommand{
 	private static Logger logger = Logger.getLogger(ParseArgumentsCommand.class);
 	
@@ -45,7 +46,7 @@ public class ParseArgumentsCommand extends SimpleCommand{
 			String locationOfTrustStore = truststore.getChildText(LOCATION_ATTRIBUTE);
 			String passwordOfTrustStore = truststore.getChildText(PASSWORD_ATTRIBUTE);
 			
-			ProgramConfiguration pc = new ProgramConfiguration(commonName, 
+			ConnectionConfiguration pc = new ConnectionConfiguration(commonName, 
 					new File(locationOfKeystore), 
 					passwordOfKeystore, 
 					new File(locationOfTrustStore), 

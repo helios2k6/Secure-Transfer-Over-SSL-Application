@@ -4,8 +4,8 @@ import org.apache.log4j.Logger;
 import org.puremvc.java.multicore.interfaces.INotification;
 import org.puremvc.java.multicore.patterns.command.SimpleCommand;
 
-import com.nlogn.SecureFacade;
-import com.nlogneg.model.objects.ProgramConfiguration;
+import com.nlogneg.SecureFacade;
+import com.nlogneg.model.objects.ConnectionConfiguration;
 
 public class SetEnviroVariablesCommand extends SimpleCommand {
 	
@@ -23,7 +23,7 @@ public class SetEnviroVariablesCommand extends SimpleCommand {
 	}
 	
 	public void execute(INotification notification){
-		ProgramConfiguration pc = (ProgramConfiguration)notification.getBody();
+		ConnectionConfiguration pc = (ConnectionConfiguration)notification.getBody();
 		
 		setProperty(KEYSTORE_PROP, pc.getKeystoreFile().getAbsolutePath());
 		setProperty(KEYSTORE_PASS, pc.getKeystorePassword());

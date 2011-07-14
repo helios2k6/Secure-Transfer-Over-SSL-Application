@@ -23,7 +23,7 @@ package com.nlogneg.model.objects;
 import java.io.File;
 import java.io.Serializable;
 
-import com.nlogn.SecureFacade;
+import com.nlogneg.SecureFacade;
 import com.nlogneg.model.ShareFolderProxy;
 
 public class ShareFile implements Serializable{
@@ -69,4 +69,13 @@ public class ShareFile implements Serializable{
 		
 		return null;
 	}
+	
+	public long getFileSize(){
+		return file.length();
+	}
+	
+	public String getName(){
+		return file.getName();
+	}
+	
 }
