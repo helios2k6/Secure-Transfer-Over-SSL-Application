@@ -30,22 +30,22 @@ public class FileList implements Serializable{
 	 */
 	private static final long serialVersionUID = -6708262632633769693L;
 	private String directoryPath;
-	private ArrayList<String> fileList;
+	private ArrayList<ShareFile> fileList;
 	
 	public FileList(String directoryPath){
 		this.directoryPath = directoryPath;
-		this.fileList = new ArrayList<String>();
+		this.fileList = new ArrayList<ShareFile>();
 	}
 	
 	public String getPath(){
 		return directoryPath;
 	}
 	
-	public List<String> getFileList(){
+	public List<ShareFile> getFileList(){
 		return fileList;
 	}
 	
-	public void addFileToList(String file){
+	public void addFileToList(ShareFile file){
 		fileList.add(file);
 	}
 }

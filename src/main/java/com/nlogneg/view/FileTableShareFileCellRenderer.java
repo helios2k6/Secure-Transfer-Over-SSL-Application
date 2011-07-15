@@ -5,7 +5,6 @@ import java.awt.Component;
 
 import javax.swing.JLabel;
 import javax.swing.JTable;
-import javax.swing.filechooser.FileSystemView;
 import javax.swing.table.TableCellRenderer;
 
 import com.nlogneg.model.objects.ShareFile;
@@ -21,7 +20,7 @@ public class FileTableShareFileCellRenderer extends JLabel implements TableCellR
 			//Rendering sharefile
 			ShareFile f = (ShareFile)shareFile;
 			//Set the icon for this guy
-			setIcon(FileSystemView.getFileSystemView().getSystemIcon(f.getFile()));
+			setIcon(f.getIcon());
 			setText(f.getName());
 			if(isSelected){
 				//Set background

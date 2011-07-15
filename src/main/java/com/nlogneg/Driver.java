@@ -46,11 +46,10 @@ public class Driver {
 		//Get Facade
 		SecureFacade facade = SecureFacade.getInstance();
 
-		//Create all commands
+		//Create all mediators
 		
 		//Create all proxies
-		
-		//Create all mediators
+		//Create all commands
 		
 	}
 }

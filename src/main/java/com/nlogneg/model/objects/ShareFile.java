@@ -23,6 +23,9 @@ package com.nlogneg.model.objects;
 import java.io.File;
 import java.io.Serializable;
 
+import javax.swing.Icon;
+import javax.swing.filechooser.FileSystemView;
+
 import com.nlogneg.SecureFacade;
 import com.nlogneg.model.ShareFolderProxy;
 
@@ -32,12 +35,19 @@ public class ShareFile implements Serializable{
 	
 	private File file;
 	
+	private Icon icon;
+	
 	private ShareFile(File file){
 		this.file = file;
+		this.icon = FileSystemView.getFileSystemView().getSystemIcon(this.file);
 	}
 	
 	public File getFile(){
 		return file;
+	}
+	
+	public Icon getIcon(){
+		return icon;
 	}
 	
 	public String getRelativePath(){

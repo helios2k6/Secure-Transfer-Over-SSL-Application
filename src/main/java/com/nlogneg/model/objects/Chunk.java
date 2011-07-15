@@ -53,8 +53,6 @@ public class Chunk implements Comparable<Chunk>, Serializable{
 			this.length = data.length;
 			
 			this.uniquePosition = uniquePosition;
-			
-			crc32 = null;
 		}else{
 			throw new ChunkTooLargeException();
 		}

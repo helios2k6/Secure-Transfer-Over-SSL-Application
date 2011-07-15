@@ -30,16 +30,39 @@ public class NewConnectionFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        mainFrame = new javax.swing.JPanel();
+        mainPanel = new javax.swing.JPanel();
+        enterURLLabel = new javax.swing.JLabel();
+        URLPanelZone = new javax.swing.JPanel();
         URL_Label = new javax.swing.JLabel();
         URLTextField = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        keyStorePanel = new javax.swing.JPanel();
+        keyStoreLabel = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         keystoreLocationField = new javax.swing.JTextField();
+        keyStoreLocationButton = new javax.swing.JButton();
+        keyStorePassword = new javax.swing.JTextField();
+        keyStorePanelLabel = new javax.swing.JLabel();
+        trustStorePanel = new javax.swing.JPanel();
+        trustStoreLabel = new javax.swing.JLabel();
+        trustStoreLocationField = new javax.swing.JTextField();
+        trustStoreLocationButton = new javax.swing.JButton();
+        trustStorePasswordLabel = new javax.swing.JLabel();
+        trustStorePasswordField = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        OKButton = new javax.swing.JButton();
+        cancelButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Connect to Peer");
 
-        mainFrame.setName("mainFrame"); // NOI18N
+        mainPanel.setName("mainPanel"); // NOI18N
+
+        enterURLLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        enterURLLabel.setText("Enter the URL of your peer");
+        enterURLLabel.setName("enterURLLabel"); // NOI18N
+
+        URLPanelZone.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        URLPanelZone.setName("URLPanelZone"); // NOI18N
 
         URL_Label.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         URL_Label.setText("URL:");
@@ -48,58 +71,196 @@ public class NewConnectionFrame extends javax.swing.JFrame {
         URLTextField.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         URLTextField.setName("URLTextField"); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel1.setText("Keystore:");
-        jLabel1.setName("jLabel1"); // NOI18N
-
-        keystoreLocationField.setName("keystoreLocationField"); // NOI18N
-
-        javax.swing.GroupLayout mainFrameLayout = new javax.swing.GroupLayout(mainFrame);
-        mainFrame.setLayout(mainFrameLayout);
-        mainFrameLayout.setHorizontalGroup(
-            mainFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainFrameLayout.createSequentialGroup()
+        javax.swing.GroupLayout URLPanelZoneLayout = new javax.swing.GroupLayout(URLPanelZone);
+        URLPanelZone.setLayout(URLPanelZoneLayout);
+        URLPanelZoneLayout.setHorizontalGroup(
+            URLPanelZoneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(URLPanelZoneLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(mainFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(mainFrameLayout.createSequentialGroup()
-                        .addComponent(URL_Label)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(URLTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 413, Short.MAX_VALUE))
-                    .addGroup(mainFrameLayout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(keystoreLocationField, javax.swing.GroupLayout.DEFAULT_SIZE, 383, Short.MAX_VALUE)))
+                .addComponent(URL_Label)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(URLTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 502, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        mainFrameLayout.setVerticalGroup(
-            mainFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainFrameLayout.createSequentialGroup()
+        URLPanelZoneLayout.setVerticalGroup(
+            URLPanelZoneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(URLPanelZoneLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(mainFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(URLPanelZoneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(URLTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(URL_Label))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        keyStorePanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        keyStorePanel.setName("keyStorePanel"); // NOI18N
+
+        keyStoreLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        keyStoreLabel.setText("Keystore:");
+        keyStoreLabel.setName("keyStoreLabel"); // NOI18N
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setText("Keystore Password:");
+        jLabel2.setName("jLabel2"); // NOI18N
+
+        keystoreLocationField.setEditable(false);
+        keystoreLocationField.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        keystoreLocationField.setName("keystoreLocationField"); // NOI18N
+
+        keyStoreLocationButton.setText("...");
+        keyStoreLocationButton.setName("keyStoreLocationButton"); // NOI18N
+
+        keyStorePassword.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        keyStorePassword.setName("keyStorePassword"); // NOI18N
+
+        javax.swing.GroupLayout keyStorePanelLayout = new javax.swing.GroupLayout(keyStorePanel);
+        keyStorePanel.setLayout(keyStorePanelLayout);
+        keyStorePanelLayout.setHorizontalGroup(
+            keyStorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(keyStorePanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(keyStorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(keyStoreLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(keyStorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(keystoreLocationField, javax.swing.GroupLayout.DEFAULT_SIZE, 358, Short.MAX_VALUE)
+                    .addComponent(keyStorePassword, javax.swing.GroupLayout.DEFAULT_SIZE, 358, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(keyStoreLocationButton)
+                .addContainerGap())
+        );
+        keyStorePanelLayout.setVerticalGroup(
+            keyStorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(keyStorePanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(keyStorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(keyStoreLabel)
+                    .addComponent(keystoreLocationField, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(keyStoreLocationButton))
                 .addGap(18, 18, 18)
-                .addGroup(mainFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(keyStorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(keyStorePassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        keyStorePanelLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        keyStorePanelLabel.setText("Enter keystore location and password");
+        keyStorePanelLabel.setName("keyStorePanelLabel"); // NOI18N
+
+        trustStorePanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        trustStorePanel.setName("trustStorePanel"); // NOI18N
+
+        trustStoreLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        trustStoreLabel.setText("Truststore:");
+        trustStoreLabel.setName("trustStoreLabel"); // NOI18N
+
+        trustStoreLocationField.setEditable(false);
+        trustStoreLocationField.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        trustStoreLocationField.setName("trustStoreLocationField"); // NOI18N
+
+        trustStoreLocationButton.setText("...");
+        trustStoreLocationButton.setName("trustStoreLocationButton"); // NOI18N
+
+        trustStorePasswordLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        trustStorePasswordLabel.setText("Truststore Password:");
+        trustStorePasswordLabel.setName("trustStorePasswordLabel"); // NOI18N
+
+        trustStorePasswordField.setName("trustStorePasswordField"); // NOI18N
+
+        javax.swing.GroupLayout trustStorePanelLayout = new javax.swing.GroupLayout(trustStorePanel);
+        trustStorePanel.setLayout(trustStorePanelLayout);
+        trustStorePanelLayout.setHorizontalGroup(
+            trustStorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(trustStorePanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(trustStorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(trustStorePasswordLabel)
+                    .addComponent(trustStoreLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(trustStorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(trustStoreLocationField, javax.swing.GroupLayout.DEFAULT_SIZE, 348, Short.MAX_VALUE)
+                    .addComponent(trustStorePasswordField, javax.swing.GroupLayout.DEFAULT_SIZE, 348, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(trustStoreLocationButton)
+                .addContainerGap())
+        );
+        trustStorePanelLayout.setVerticalGroup(
+            trustStorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(trustStorePanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(trustStorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(trustStoreLabel)
+                    .addComponent(trustStoreLocationField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(trustStoreLocationButton))
+                .addGap(18, 18, 18)
+                .addGroup(trustStorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(trustStorePasswordLabel)
+                    .addComponent(trustStorePasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel1.setText("Enter truststore location and password");
+        jLabel1.setName("jLabel1"); // NOI18N
+
+        OKButton.setText("OK");
+        OKButton.setName("OKButton"); // NOI18N
+
+        cancelButton.setText("Cancel");
+        cancelButton.setName("cancelButton"); // NOI18N
+
+        javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
+        mainPanel.setLayout(mainPanelLayout);
+        mainPanelLayout.setHorizontalGroup(
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(enterURLLabel)
+                    .addComponent(URLPanelZone, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(keyStorePanelLabel)
+                    .addComponent(keyStorePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel1)
-                    .addComponent(keystoreLocationField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(321, Short.MAX_VALUE))
+                    .addComponent(trustStorePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
+                        .addComponent(cancelButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(OKButton)))
+                .addContainerGap())
+        );
+        mainPanelLayout.setVerticalGroup(
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(enterURLLabel)
+                .addGap(18, 18, 18)
+                .addComponent(URLPanelZone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(keyStorePanelLabel)
+                .addGap(18, 18, 18)
+                .addComponent(keyStorePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(trustStorePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(OKButton)
+                    .addComponent(cancelButton))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(mainFrame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(mainFrame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -117,10 +278,26 @@ public class NewConnectionFrame extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton OKButton;
+    private javax.swing.JPanel URLPanelZone;
     private javax.swing.JTextField URLTextField;
     private javax.swing.JLabel URL_Label;
+    private javax.swing.JButton cancelButton;
+    private javax.swing.JLabel enterURLLabel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel keyStoreLabel;
+    private javax.swing.JButton keyStoreLocationButton;
+    private javax.swing.JPanel keyStorePanel;
+    private javax.swing.JLabel keyStorePanelLabel;
+    private javax.swing.JTextField keyStorePassword;
     private javax.swing.JTextField keystoreLocationField;
-    private javax.swing.JPanel mainFrame;
+    private javax.swing.JPanel mainPanel;
+    private javax.swing.JLabel trustStoreLabel;
+    private javax.swing.JButton trustStoreLocationButton;
+    private javax.swing.JTextField trustStoreLocationField;
+    private javax.swing.JPanel trustStorePanel;
+    private javax.swing.JTextField trustStorePasswordField;
+    private javax.swing.JLabel trustStorePasswordLabel;
     // End of variables declaration//GEN-END:variables
 }
