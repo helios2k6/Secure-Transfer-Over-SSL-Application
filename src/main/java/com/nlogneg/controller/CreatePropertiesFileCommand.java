@@ -11,10 +11,10 @@ import org.apache.log4j.Logger;
 import org.puremvc.java.multicore.interfaces.INotification;
 import org.puremvc.java.multicore.patterns.command.SimpleCommand;
 
-public class SetUpPropertiesFileCommand extends SimpleCommand{
+public class CreatePropertiesFileCommand extends SimpleCommand{
 	
 	private static Logger logger = Logger
-			.getLogger(SetUpPropertiesFileCommand.class);
+			.getLogger(CreatePropertiesFileCommand.class);
 	
 	@Override
 	public void execute(INotification notification){

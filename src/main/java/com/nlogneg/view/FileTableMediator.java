@@ -18,7 +18,8 @@ public class FileTableMediator extends Mediator{
 	public FileTableMediatorEnum getType(){
 		return type;
 	}
-
+	
+	//TODO: Finish this up
 	@Override
 	public String[] listNotificationInterests(){
 		String[] result = null;
@@ -32,5 +33,6 @@ public class FileTableMediator extends Mediator{
 		return result;
 	}
 	
+	//TODO: Make "handleNotification()" method so you can do stuff with this
 	
 }
